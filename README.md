@@ -6,7 +6,7 @@ A **Retrieval-Augmented Generation (RAG)** chatbot that lets you upload document
 
 ## ✨ Features
 
-- 📄 Upload **PDFs, DOCX, PPTX, XLSX, CSV, HTML, TXT** files
+- 📄 Upload **PDFs, DOCX, PPTX, XLSX, CSV, HTML, TXT, SQL** files
 - 🔍 Semantic search using **FAISS** + **Sentence Transformers**
 - 🤖 Answers grounded strictly in your documents — no hallucination
 - 🧠 Multi-turn conversation memory
