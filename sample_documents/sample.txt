@@ -1,0 +1,3 @@
+This is a sample plain text document for testing the RAG pipeline.
+It contains unstructured text that can be chunked and indexed.
+DocMind is a powerful RAG chatbot.

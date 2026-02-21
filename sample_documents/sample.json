@@ -1,0 +1,15 @@
+{
+  "project": "DocMind RAG",
+  "version": "1.0.0",
+  "features": [
+    "Multi-format support",
+    "FAISS vector store",
+    "Streamlit UI",
+    "Gemini Integration"
+  ],
+  "supported_formats": {
+    "structured": ["CSV", "XLSX", "JSON", "SQL"],
+    "unstructured": ["TXT", "MD", "PDF"],
+    "semi_structured": ["XML", "HTML", "DOCX", "PPTX"]
+  }
+}

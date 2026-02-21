@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book id="bk101">
+        <author>Karthigakrishnan</author>
+        <title>RAG Chatbot Documentation</title>
+        <genre>Technology</genre>
+        <price>0.00</price>
+        <publish_date>2026-02-21</publish_date>
+        <description>A guide to building a multi-format RAG chatbot using Gemini.</description>
+    </book>
+    <book id="bk102">
+        <author>DeepMind Team</author>
+        <title>Advanced AI Agents</title>
+        <genre>AI</genre>
+        <price>Free</price>
+        <description>Exploring the capabilities of agentic workflows.</description>
+    </book>
+</library>
