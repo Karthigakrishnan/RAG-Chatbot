@@ -333,6 +333,9 @@ def extract_text(path: str, name: str) -> str:
         elif ext == ".json":
             with open(path, encoding="utf-8", errors="ignore") as f:
                 return json.dumps(json.load(f), indent=2)
+        elif ext == ".sql":
+            with open(path, encoding="utf-8", errors="ignore") as f:
+                return f.read()
         elif ext == ".xml":
             root = ET.parse(path).getroot()
             return "\n".join(
@@ -617,7 +620,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown(
         '<p style="font-size:.68rem;color:#afc8af;text-align:center;line-height:1.9">'
-        "PDF · DOCX · PPTX · XLSX<br>CSV · TXT · MD · JSON · XML · HTML</p>",
+        "PDF · DOCX · PPTX · XLSX<br>CSV · TXT · MD · JSON · XML · HTML · SQL</p>",
         unsafe_allow_html=True,
     )
 
@@ -654,7 +657,7 @@ if not st.session_state.processed:
         uploaded = st.file_uploader(
             "upload", accept_multiple_files=True,
             type=["pdf","docx","pptx","ppt","xlsx","xls",
-                  "csv","txt","md","json","xml","html","htm"],
+                  "csv","txt","md","json","xml","html","htm", "sql"],
             label_visibility="collapsed",
         )
 
@@ -665,6 +668,7 @@ if not st.session_state.processed:
             <span class="fmt-pill">CSV</span><span class="fmt-pill">TXT</span>
             <span class="fmt-pill">MD</span><span class="fmt-pill">JSON</span>
             <span class="fmt-pill">XML</span><span class="fmt-pill">HTML</span>
+            <span class="fmt-pill">SQL</span>
         </div>
         """, unsafe_allow_html=True)
 
